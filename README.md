@@ -6,8 +6,8 @@ This is a complete, responsive website for **Kishkinda Karnataka Souharda Sahaka
 **Organization Details:**
 - Name: Kishkinda Karnataka Souharda Sahakari Sangha Niyamitha
 - Registration Number: 34567
-- Established: 2015
-- Location: Vishas Complex, 19th ward, PeerzadanRoad, Gangavathi - 583227
+- Established: 2025
+- Location: Vishas Complex, 19th ward, Peerzada Road, Gangavathi - 583227
 - Contact: +91 80738-22387 | kksssn@gmail.com
 - Hours: Monday-Saturday 10AM-5PM | Sunday Closed
 

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - KKSSSN</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .gallery-image {
+            width: 100%;
+            height: 200px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .gallery-caption {
+            padding: 15px;
+            text-align: center;
+            color: var(--primary-blue);
+            font-weight: 500;
+        }
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid var(--primary-blue);
+            background: white;
+            color: var(--primary-blue);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active {
+            background: var(--primary-blue);
+            color: white;
+        }
+        .filter-btn:hover {
+            background: var(--primary-blue);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="header-contact">
+                    <a href="tel:+918073822387">📞 +91 80738-22387</a>
+                    <a href="mailto:kksssn@gmail.com">✉️ kksssn@gmail.com</a>
+                </div>
+                <div class="header-top-right">Working Hours: Mon-Sat 10AM-5PM | Sunday: Closed</div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="logo-section">
+                <img src="../assets/images/logo.png" alt="KKSSSN Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>ಕಿಷ್ಕಿಂಧಾ ಕರ್ನಾಟಕ ಸೌಹಾರ್ದ ಸಹಕಾರಿ ಸಂಘ ,.ನಿ.,  ಗಂಗಾವತಿ<br>KISHKINDHA KARNATAKA SOUHARDA SAHAKARI SANGHA ..NI.. GANGAVATHI</h1>
+                    <p>ಸಂಖ್ಯೆ: ಉನಿಕೊ/ವಿ-5/ಸೌ.ಕಾ/ನೋಂದಣಿ/7047/2025-26 | Est. 2025</p>
+                </div>
+            </div>
+
+            <button class="nav-toggle">☰</button>
+
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#about">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html#history">History</a></li>
+                            <li><a href="about.html#vision">Vision & Mission</a></li>
+                            <li><a href="about.html#leadership">Leadership</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#accounts">Accounts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="savings.html">Savings Account</a></li>
+                            <li><a href="pigmy.html">Pigmy Account</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#loans">Loans & Advance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="loans.html#gold">Gold Loan</a></li>
+                            <li><a href="loans.html#home">Home Loan</a></li>
+                            <li><a href="loans.html#business">Business Loan</a></li>
+                            <li><a href="loans.html#education">Education Loan</a></li>
+                            <li><a href="loans.html#mortgage">Mortgage Loan</a></li>
+                            <li><a href="loans.html#unsecured">Unsecured Loan</a></li>
+                            <li><a href="loans.html#overdraft">Overdraft Facility</a></li>
+                            <li><a href="loans.html#emi-calculator">EMI Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#deposits">Deposits</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fixed-deposits.html">Fixed Deposit</a></li>
+                            <li><a href="fixed-deposits.html#recurring">Recurring Deposit</a></li>
+                            <li><a href="pigmy.html">Pigmy Deposit</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#facilities">Facilities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">Banking Services</a></li>
+                            <li><a href="services.html#locker">Locker Facility</a></li>
+                            <li><a href="services.html#online">Online Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main style="background: white; padding: 40px 20px;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h1 class="section-title" style="text-align: center; margin-bottom: 40px;">Gallery</h1>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+                <button class="filter-btn" onclick="filterGallery('events')">Events</button>
+                <button class="filter-btn" onclick="filterGallery('branches')">Branch Opens</button>
+                <button class="filter-btn" onclick="filterGallery('team')">Team Activities</button>
+                <button class="filter-btn" onclick="filterGallery('community')">Community Programs</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">🏦</div>
+                    <div class="gallery-caption">Annual General Meeting 2024</div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">🎉</div>
+                    <div class="gallery-caption">Foundation Day Celebration</div>
+                </div>
+                <div class="gallery-item" data-category="branches">
+                    <div class="gallery-image">🏪</div>
+                    <div class="gallery-caption">Gangavathi Branch Opening</div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <div class="gallery-image">👥</div>
+                    <div class="gallery-caption">Team Training Program</div>
+                </div>
+                <div class="gallery-item" data-category="community">
+                    <div class="gallery-image">🤝</div>
+                    <div class="gallery-caption">Financial Literacy Camp</div>
+                </div>
+                <div class="gallery-item" data-category="community">
+                    <div class="gallery-image">📚</div>
+                    <div class="gallery-caption">Student Awareness Program</div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">🎊</div>
+                    <div class="gallery-caption">Inaugural Ceremony 2025</div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <div class="gallery-image">🏆</div>
+                    <div class="gallery-caption">Employee Recognition Awards</div>
+                </div>
+                <div class="gallery-item" data-category="branches">
+                    <div class="gallery-image">🌟</div>
+                    <div class="gallery-caption">New ATM Installation</div>
+                </div>
+                <div class="gallery-item" data-category="community">
+                    <div class="gallery-image">💚</div>
+                    <div class="gallery-caption">Environmental Initiative</div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <div class="gallery-image">🎓</div>
+                    <div class="gallery-caption">Staff Development Workshop</div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">📊</div>
+                    <div class="gallery-caption">Annual Conference 2024</div>
+                </div>
+            </div>
+
+            <!-- Gallery Description -->
+            <section style="background: #f8f9fa; padding: 30px; border-radius: 8px; margin-top: 40px;">
+                <h2 style="color: var(--primary-blue); margin-top: 0;">Our Gallery</h2>
+                <p style="color: #333; line-height: 1.8; margin: 0;">
+                    Welcome to KKSSSN's gallery! Here you can view photographs and moments from our various events, branch inaugurations, team activities, and community programs. These images represent our commitment to innovation, customer service excellence, and community engagement. We are proud of our team's dedication and the positive impact we bring to the communities we serve.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="about.html">About KKSSSN</a></li>
+                    <li><a href="about.html#history">Our History</a></li>
+                    <li><a href="about.html#vision">Vision & Mission</a></li>
+                    <li><a href="about.html#leadership">Leadership</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="savings.html">Savings Account</a></li>
+                    <li><a href="deposits.html">Deposits</a></li>
+                    <li><a href="loans.html">Loans</a></li>
+                    <li><a href="services.html">All Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html#grievance">Grievance Redressal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 Vishas Complex, 19th ward<br>Peerzada Road, Gangavathi - 583227</li>
+                    <li>📞 +91 80738-22387</li>
+                    <li>✉️ kksssn@gmail.com</li>
+                    <li>🕒 Mon-Sat: 10AM-5PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div style="margin-bottom: 15px; font-size: 13px;">
+                <a href="careers.html" style="color: var(--gold-accent); text-decoration: none; margin: 0 12px;">Careers</a> | 
+                <a href="gallery.html" style="color: var(--gold-accent); text-decoration: none; margin: 0 12px;">Gallery</a> | 
+                <a href="faqs.html" style="color: var(--gold-accent); text-decoration: none; margin: 0 12px;">FAQs</a>
+            </div>
+            <div class="footer-logos">
+                <span style="font-weight: 600;">Regulated by:</span>
+                <span>RCS Karnataka | RBI Guidelines Compliant</span>
+            </div>
+            <p style="margin-top: 20px;">© 2024-25 Kishkindha Karnataka Souharda Sahakari Sangha Niyamitha. All Rights Reserved.</p>
+            <p style="font-size: 12px; margin-top: 10px;">Designed & Developed for transparent and accessible banking services</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('nav');
+        navToggle.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
