@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board of Directors & Management - KKSSSN</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .page-header {
+            background-color: var(--white);
+            color: var(--primary-blue);
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            font-size: 16px;
+            color: var(--dark-gray);
+        }
+
+        .board-table {
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .board-table th,
+        .board-table td {
+            border: 1px solid var(--border-gray);
+            padding: 14px 12px;
+        }
+
+        .board-table th {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .board-table th:nth-child(1),
+        .board-table td:nth-child(1) {
+            width: 10%;
+        }
+
+        .board-table th:nth-child(2),
+        .board-table td:nth-child(2) {
+            width: 45%;
+        }
+
+        .board-table th:nth-child(3),
+        .board-table td:nth-child(3) {
+            width: 45%;
+        }
+
+        .board-table tbody tr:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+
+        .position {
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        .member-name {
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        .footer-note {
+            text-align: center;
+            color: var(--dark-gray);
+            margin-top: 30px;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 30px 15px;
+            }
+
+            .page-header h1 {
+                font-size: 28px;
+            }
+
+            .board-table th,
+            .board-table td {
+                padding: 12px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="header-contact">
+                    <a href="tel:+918073822387">📞 +91 80738-22387</a>
+                    <a href="mailto:kksssn@gmail.com">✉️ kksssn@gmail.com</a>
+                </div>
+                <div class="header-top-right">Working Hours: Mon-Sat 10AM-5PM | Sunday: Closed</div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="logo-section">
+                <img src="../assets/images/logo.png" alt="KKSSSN Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>ಕಿಷ್ಕಿಂಧಾ ಕರ್ನಾಟಕ ಸೌಹಾರ್ದ ಸಹಕಾರಿ ಸಂಘ ನಿ.,  ಗಂಗಾವತಿ<br>KISHKINDHA KARNATAKA SOUHARDA SAHAKARI SANGHA NI., GANGAVATHI</h1>
+                    <p>ಸಂಖ್ಯೆ: ಉನಿಕೊ/ವಿ-5/ಸೌ.ಕಾ/ನೋಂದಣಿ/7047/2025-26 | Est. 2025</p>
+                </div>
+            </div>
+
+            <button class="nav-toggle">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html#history">History</a></li>
+                            <li><a href="about.html#vision">Vision & Mission</a></li>
+                            <li><a href="board.html">Board of Directors</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#accounts">Accounts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="savings.html">Savings Account</a></li>
+                            <li><a href="pigmy.html">Pigmy Account</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#loans">Loans & Advance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="loans.html#gold">Gold Loan</a></li>
+                            <li><a href="loans.html#home">Home Loan</a></li>
+                            <li><a href="loans.html#business">Business Loan</a></li>
+                            <li><a href="loans.html#education">Education Loan</a></li>
+                            <li><a href="loans.html#mortgage">Mortgage Loan</a></li>
+                            <li><a href="loans.html#unsecured">Unsecured Loan</a></li>
+                            <li><a href="loans.html#overdraft">Overdraft Facility</a></li>
+                            <li><a href="loans.html#emi-calculator">EMI Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#deposits">Deposits</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fixed-deposits.html">Fixed Deposit</a></li>
+                            <li><a href="fixed-deposits.html#recurring">Recurring Deposit</a></li>
+                            <li><a href="pigmy.html">Pigmy Deposit</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#facilities">Facilities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">Banking Services</a></li>
+                            <li><a href="services.html#locker">Locker Facility</a></li>
+                            <li><a href="services.html#online">Online Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Board of Directors & Management</h1>
+        <p>Leadership Team</p>
+    </div>
+
+    <main>
+        <section class="section">
+            <div class="table-wrapper">
+                <table class="board-table">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="member-name">ಡಾ. ವಿರುಪಾಕ್ಷಪ್ಪ ಅಯ್ಯಪ್ಪ ದ್ಯಾವಲಾಪುರ</td>
+                            <td class="position">ಗೌರವ ಅಧ್ಯಕ್ಷರು</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="member-name">ಶ್ರೀ ಶರಣೇಗೌಡ ಮಾಲಿಪಾಟೀಲ್ ಆಗೋಲಿ</td>
+                            <td class="position">ಅಧ್ಯಕ್ಷರು</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="member-name">ಶ್ರೀ ಅಕ್ಷಯ್ ಅರ್ಲೂರ್</td>
+                            <td class="position">ಉಪಾಧ್ಯಕ್ಷರು</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="member-name">ಶ್ರೀ ಶರಣಯ್ಯ ಜಂಬಯ್ಯನವರ್ ಹೇರೂರು</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="member-name">ಶ್ರೀ ಅಮರೇಶ ಅಂಗಡಿ ನವಲಿ</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="member-name">ಶ್ರೀ ಎಸ್. ರಾಮನ್</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="member-name">ಶ್ರೀ ರಾಯಪ್ಪ ಕಲ್ಮಂಗಿ ಆಗೋಲಿ</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="member-name">ಶ್ರೀಮತಿ ಸ್ವಪ್ನ ಶರಣೇಗೌಡ ಮಾಲಿಪಾಟೀಲ್</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="member-name">ಶ್ರೀಮತಿ ನಾಗವೇಣಿ ವೀರನಗೌಡ ಪಿ</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="member-name">ಶ್ರೀ ವೈ. ಮುರುಡೇಶ ಸ್ವಾಮಿ ಚಿಕ್ಕಜಂತಕಲ್</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td class="member-name">ಶ್ರೀ ನಾಗರಾಜ ಅರ್ಲೂರ್</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="member-name">ಶ್ರೀ ಅಭಿಷೇಕ್ ಅರ್ಲೂರ್</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td class="member-name">ಶ್ರೀ ವಿನಾಯಕ ಅರ್ಲೂರ್</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td class="member-name">ಶ್ರೀ ನಾಗರಾಜ ಮುಸಾಫಾರಿ</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td class="member-name">ಶ್ರೀ ರಮೇಶ ವಡ್ಡರಹಟ್ಟಿ</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td class="member-name">ಶ್ರೀ ಬಿ. ರಮೇಶ</td>
+                            <td class="position">ನಿರ್ದೇಶಕರು</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="footer-note">For inquiries, please contact us through the main office.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="about.html">About KKSSSN</a></li>
+                    <li><a href="about.html#history">Our History</a></li>
+                    <li><a href="about.html#vision">Vision & Mission</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="savings.html">Savings Account</a></li>
+                    <li><a href="deposits.html">Deposits</a></li>
+                    <li><a href="loans.html">Loans</a></li>
+                    <li><a href="services.html">All Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html#grievance">Grievance Redressal</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 Vishas Complex, 19th ward<br>Peerzada Road, Gangavathi - 583227</li>
+                    <li>📞 +91 80738-22387</li>
+                    <li>✉️ kksssn@gmail.com</li>
+                    <li>🕒 Mon-Sat: 10AM-5PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div style="margin-bottom: 15px; font-size: 13px;">
+                <a href="careers.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">Careers</a> |
+                <a href="gallery.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">Gallery</a> |
+                <a href="faqs.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">FAQs</a>
+            </div>
+            <div class="footer-logos">
+                <span style="font-weight: 600;">Regulated by:</span>
+                <span>RCS Karnataka | RBI Guidelines Compliant</span>
+            </div>
+            <p style="margin-top: 20px;">© 2024-25 Kishkindha Karnataka Souharda Sahakari Sangha Niyamitha. All Rights Reserved.</p>
+            <p style="font-size: 12px; margin-top: 10px;">Designed & Developed for transparent and accessible banking services</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

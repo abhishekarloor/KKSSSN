@@ -225,6 +225,11 @@ nav a:hover {
     color: var(--primary-blue);
 }
 
+/* Hide the About Us leadership submenu item across all pages */
+.dropdown-menu a[href$="#leadership"] {
+    display: none;
+}
+
 .internet-banking-btn {
     background-color: var(--gold);
     color: var(--primary-blue);

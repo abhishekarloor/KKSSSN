@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent Successfully - KKSSSN</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .success-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .success-box {
+            background: var(--light-gray);
+            padding: 50px 40px;
+            border-radius: 12px;
+            max-width: 500px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .success-title {
+            color: var(--primary-blue);
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .success-message {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .success-details {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: left;
+            border-left: 4px solid var(--gold);
+        }
+
+        .success-details p {
+            margin: 10px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .success-details strong {
+            color: var(--primary-blue);
+        }
+
+        .btn-home {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .btn-home:hover {
+            background-color: var(--gold);
+            color: var(--primary-blue);
+        }
+
+        .btn-secondary {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--primary-blue);
+            padding: 12px 30px;
+            border: 2px solid var(--primary-blue);
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-blue);
+            color: white;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 600px) {
+            .success-box {
+                padding: 30px 20px;
+            }
+
+            .success-title {
+                font-size: 24px;
+            }
+
+            .success-icon {
+                font-size: 60px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn-home, .btn-secondary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-top">
+            <div class="header-top-content">
+                <div class="header-contact">
+                    <a href="tel:+918073822387">📞 +91 80738-22387</a>
+                    <a href="mailto:kksssn@gmail.com">✉️ kksssn@gmail.com</a>
+                </div>
+                <div class="header-top-right">Working Hours: Mon-Sat 10AM-5PM | Sunday: Closed</div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="logo-section">
+                <img src="../assets/images/logo.png" alt="KKSSSN Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>ಕಿಷ್ಕಿಂಧಾ ಕರ್ನಾಟಕ ಸೌಹಾರ್ದ ಸಹಕಾರಿ ಸಂಘ ,.ನಿ.,  ಗಂಗಾವತಿ<br>KISHKINDHA KARNATAKA SOUHARDA SAHAKARI SANGHA ..NI.. GANGAVATHI</h1>
+                    <p>ಸಂಖ್ಯೆ: ಉನಿಕೊ/ವಿ-5/ಸೌ.ಕಾ/ನೋಂದಣಿ/7047/2025-26 | Est. 2025</p>
+                </div>
+            </div>
+
+            <button class="nav-toggle">☰</button>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html#history">History</a></li>
+                            <li><a href="about.html#vision">Vision & Mission</a></li>
+                            <li><a href="about.html#leadership">Leadership</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#accounts">Accounts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="savings.html">Savings Account</a></li>
+                            <li><a href="pigmy.html">Pigmy Account</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#loans">Loans & Advance</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="loans.html#gold">Gold Loan</a></li>
+                            <li><a href="loans.html#home">Home Loan</a></li>
+                            <li><a href="loans.html#business">Business Loan</a></li>
+                            <li><a href="loans.html#education">Education Loan</a></li>
+                            <li><a href="loans.html#mortgage">Mortgage Loan</a></li>
+                            <li><a href="loans.html#unsecured">Unsecured Loan</a></li>
+                            <li><a href="loans.html#overdraft">Overdraft Facility</a></li>
+                            <li><a href="loans.html#emi-calculator">EMI Calculator</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#deposits">Deposits</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fixed-deposits.html">Fixed Deposit</a></li>
+                            <li><a href="fixed-deposits.html#recurring">Recurring Deposit</a></li>
+                            <li><a href="pigmy.html">Pigmy Deposit</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#facilities">Facilities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">Banking Services</a></li>
+                            <li><a href="services.html#locker">Locker Facility</a></li>
+                            <li><a href="services.html#online">Online Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <h1>Message Received</h1>
+        <p>Thank you for reaching out to us!</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="section">
+            <div class="success-container">
+                <div class="success-box">
+                    <div class="success-icon">✅</div>
+                    <h2 class="success-title">Message Sent Successfully!</h2>
+                    <p class="success-message">
+                        Thank you for contacting KKSSSN. We have received your message and will review it shortly.
+                    </p>
+
+                    <div class="success-details">
+                        <p><strong>What happens next?</strong></p>
+                        <p>📧 Our team will review your message within 24 business hours.</p>
+                        <p>📞 We will contact you via phone or email to address your inquiry.</p>
+                        <p>⏱️ For urgent matters, please call us directly at <a href="tel:+918073822387" style="color: var(--primary-blue); text-decoration: none;"><strong>+91 80738-22387</strong></a></p>
+                    </div>
+
+                    <div class="button-group">
+                        <a href="../index.html" class="btn-home">Return to Home</a>
+                        <a href="contact.html" class="btn-secondary">Send Another Message</a>
+                    </div>
+
+                    <div style="margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;">
+                        <h4 style="color: var(--primary-blue); margin-bottom: 15px;">Other Ways to Reach Us</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; text-align: left;">
+                            <div>
+                                <p style="margin: 0; font-size: 14px; color: #666;">
+                                    <strong>📍 Address:</strong><br>
+                                    Vishas Complex, 19th Ward<br>
+                                    Peerzadan Road, Gangavathi - 583227
+                                </p>
+                            </div>
+                            <div>
+                                <p style="margin: 0; font-size: 14px; color: #666;">
+                                    <strong>🕒 Hours:</strong><br>
+                                    Mon-Sat: 10 AM - 5 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="about.html">About KKSSSN</a></li>
+                    <li><a href="about.html#history">Our History</a></li>
+                    <li><a href="about.html#vision">Vision & Mission</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="savings.html">Savings Account</a></li>
+                    <li><a href="deposits.html">Deposits</a></li>
+                    <li><a href="loans.html">Loans</a></li>
+                    <li><a href="services.html">All Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html#grievance">Grievance Redressal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 Vishas Complex, 19th ward<br>Peerzada Road, Gangavathi - 583227</li>
+                    <li>📞 +91 80738-22387</li>
+                    <li>✉️ kksssn@gmail.com</li>
+                    <li>🕒 Mon-Sat: 10AM-5PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div style="margin-bottom: 15px; font-size: 13px;">
+                <a href="careers.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">Careers</a> |
+                <a href="gallery.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">Gallery</a> |
+                <a href="faqs.html" style="color: var(--gold); text-decoration: none; margin: 0 12px;">FAQs</a>
+            </div>
+            <div class="footer-logos">
+                <span style="font-weight: 600;">Regulated by:</span>
+                <span>RCS Karnataka | RBI Guidelines Compliant</span>
+            </div>
+            <p style="margin-top: 20px;">© 2024-25 Kishkindha Karnataka Souharda Sahakari Sangha Niyamitha. All Rights Reserved.</p>
+            <p style="font-size: 12px; margin-top: 10px;">Designed & Developed for transparent and accessible banking services</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
