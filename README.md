@@ -1,14 +1,14 @@
 # KKSSSN Website - Complete Documentation
 
 ## Overview
-This is a complete, responsive website for **Kishkinda Karnataka Souharda Sahakari Sangha Niyamitha** - A cooperative bank society based in Gangavathi, Karnataka.
+This is a complete, responsive website for **Kishkinda Karnataka Souharda Sahakari Sangha Niyamitha** - A cooperative society society based in Gangavathi, Karnataka.
 
 **Organization Details:**
 - Name: Kishkinda Karnataka Souharda Sahakari Sangha Niyamitha
 - Registration Number: 34567
 - Established: 2025
 - Location: Vishas Complex, 19th ward, Peerzada Road, Gangavathi - 583227
-- Contact: +91 80738-22387 | kksssn@gmail.com
+- Contact: +91 80738-22387 | kishkindhakarnataka@gmail.com
 - Hours: Monday-Saturday 10AM-5PM | Sunday Closed
 
 ---
@@ -33,7 +33,7 @@ This is a complete, responsive website for **Kishkinda Karnataka Souharda Sahaka
    - Core values (4 pillars: Integrity, Commitment, Growth, Excellence)
    - Leadership section (Chairman, Secretary/CEO, Treasurer)
    - Organization information table
-   - Cooperative banking benefits
+   - Cooperative Financial benefits
 
 3. **pages/savings.html** - Savings Account (NEW)
    - Account benefits and features
@@ -55,7 +55,7 @@ This is a complete, responsive website for **Kishkinda Karnataka Souharda Sahaka
    - Application process flowchart
    - Interest rate comparison table
 
-5. **pages/services.html** - Banking Services
+5. **pages/services.html** - Financial Services
    - Savings Account details
    - Locker facility information
    - UPI services
@@ -192,7 +192,7 @@ Find each loan type section and update the rates accordingly.
 Search for and update:
 ```
 +91 80738-22387        → Your phone number
-kksssn@gmail.com       → Your email
+kishkindhakarnataka@gmail.com       → Your email
 Gangavathi - 583227    → Your address
 ```
 
@@ -267,7 +267,7 @@ Each page includes:
 
 3. Add meta keywords (optional):
 ```html
-<meta name="keywords" content="cooperative, bank, loans, deposits">
+<meta name="keywords" content="cooperative, loans, deposits">
 ```
 
 ---
@@ -289,7 +289,7 @@ Each page includes:
 3. Configure domain (optional)
 
 ### Enable HTTPS
-- Required for banking website
+- Required for Financial website
 - Most hosts provide free SSL certificates
 - Ensures secure customer data transmission
 
@@ -297,7 +297,7 @@ Each page includes:
 
 ## Important Notes
 
-### Banking Compliance
+### Financial Compliance
 ✓ DICGC coverage mention included
 ✓ RCS Karnataka registration displayed
 ✓ RBI guidelines referenced

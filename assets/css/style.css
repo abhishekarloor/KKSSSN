@@ -230,7 +230,7 @@ nav a:hover {
     display: none;
 }
 
-.internet-banking-btn {
+.internet-Financial-btn {
     background-color: var(--gold);
     color: var(--primary-blue);
     padding: 10px 20px !important;
@@ -239,7 +239,7 @@ nav a:hover {
     margin-left: 10px;
 }
 
-.internet-banking-btn:hover {
+.internet-Financial-btn:hover {
     background-color: var(--white);
     box-shadow: 0 2px 8px rgba(212,175,55,0.3);
 }
